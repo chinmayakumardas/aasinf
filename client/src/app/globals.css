@@ -1,3 +1,4 @@
+@import "locomotive-scroll/dist/locomotive-scroll.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,13 +99,13 @@
 .dropdown-menu {
   position: fixed;
   left: 0;
-  top: 50px; /* Adjust based on your design */
+  top: 50px; 
   z-index: 1000;
 }
 
 .post-card-detail {
   padding: 20px;
-  /* max-width: 800px; */
+
   margin: 0 auto;
 }
 
@@ -112,3 +113,15 @@ button {
   margin-top: 10px;
 }
 
+
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+[data-scroll] {
+  will-change: transform;
+}
