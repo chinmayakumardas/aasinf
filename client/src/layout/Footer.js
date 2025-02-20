@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-
+import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail } from "lucide-react"; // Added Phone and Mail icons
+import { useRouter } from 'next/navigation';
 export default function Footer() {
+  const router = useRouter();
   return (
     <footer className="border-2 py-8 min-h-[50vh] flex flex-col justify-center">
       <div className="container mx-auto px-4 flex flex-col justify-around">
@@ -18,8 +19,20 @@ export default function Footer() {
               Plot No. 52, Bapuji Nagar, Unit-1 Main Street, <br />
               Forest Park, Bhubaneswar, Khordha, Odisha, India 751009
             </p>
-
-          
+            <p className="mt-2 text-sm">
+              <strong>REGISTERED OFFICE</strong>
+              <br />
+              Sanara Chhaka, Jagatsinghpur,
+               <br />
+               Odisha, India, 754104
+            </p>
+            <p className="mt-2 text-sm">
+              <strong>BRANCH OFFICE</strong>
+              <br />
+              5678 Trade St, <br />
+              Dubai, United Arab Emirates
+            </p>
+           
           </div>
 
           {/* Column 2: Quick Links */}
@@ -47,7 +60,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="hover:text-gray-300">
+                <Link href="/insights/case-studies" className="hover:text-gray-300">
                   Case studies
                 </Link>
               </li>
@@ -78,7 +91,6 @@ export default function Footer() {
                   Consulting
                 </Link>
               </li>
-              
             </ul>
           </div>
 
@@ -99,6 +111,17 @@ export default function Footer() {
                 <Linkedin className="w-6 h-6 hover:text-blue-600" />
               </Link>
             </div>
+            <div className="flex py-4 flex-col gap-4">
+            <h3 className="text-lg font-semibold">Connect with us</h3>
+            <div className="flex items-center mt-2 cursor-pointer" onClick={() => window.location.href = 'tel:+911234567890'}>
+              <Phone className="w-4 h-4 mr-1" />
+              <span className="text-sm">+91 12345 67890</span>
+            </div>
+            <div className="flex items-center mt-2 cursor-pointer" onClick={() => window.location.href = 'mailto:info@aasit.com'}>
+              <Mail className="w-4 h-4 mr-1" />
+              <span className="text-sm">info@aasit.com</span>
+            </div>
+            </div>
           </div>
         </div>
 
@@ -106,9 +129,9 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-6 py-4 text-center text-sm flex flex-col md:flex-row justify-between">
           <div>Copyright© {new Date().getFullYear()} AAS Information Technology.</div>
           <div className="flex gap-2 mt-2 ">
-            <a href="/privacy-policy" className="hover:underline">Privacy Policy</a> | 
-            <a href="/cookies-policy" className="hover:underline">Cookies</a> | 
-            <a href="/terms-of-services" className="hover:underline">Terms of Service</a>
+              <Link href="/privacy-policy" onClick={() => router.push('/admin')} className="hover:underline">Privacy Policy</Link> | 
+              <Link href="/cookies-policy" onClick={() => router.push('/admin')} className="hover:underline">Cookies</Link> | 
+              <Link href="/terms-of-service" onClick={() => router.push('/admin')} className="hover:underline">Terms of Service</Link>
           </div>
         </div>
       </div>

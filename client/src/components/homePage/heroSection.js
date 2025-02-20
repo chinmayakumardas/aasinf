@@ -36,7 +36,7 @@ export default function HeroSection() {
       <CarouselContent className="h-full">
         {images.map((image, index) => (
           <CarouselItem key={index} className="h-full">
-            <div className="h-[40vh] md:h-[80vh] w-full flex items-center justify-start relative">
+            <div className="h-[40vh] md:h-[90vh] w-full flex items-center justify-start relative">
               <img
                 src={image.src}
                 alt={`Carousel Image ${index + 1}`}
@@ -56,8 +56,10 @@ export default function HeroSection() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute left-0 z-10 top-1/2 transform -translate-y-1/2" />
+      <CarouselPrevious className="absolute left-0 z-10 top-1/2 transform -translate-y-1/2 " />
       <CarouselNext className="absolute right-0 z-10 top-1/2 transform -translate-y-1/2" />
     </Carousel>
+
+    
   )
 }

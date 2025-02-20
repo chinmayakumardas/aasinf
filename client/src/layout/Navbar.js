@@ -44,6 +44,9 @@ import {
 } from "@/components/ui/navigation-menu"; // Adjust path
 import { ListItem } from "@mui/material";
 import  Insights  from "@/layout/header/Insights";
+import Services from "./header/Services";
+import More from "./header/More";
+
 
 export function NavbarDemo() {
   
@@ -53,27 +56,16 @@ export function NavbarDemo() {
 
     <header className="py-4 h-[100px]  bg-white text-black dark:text-white dark:bg-black flex items-center justify-between shadow-md">
           {/* ShadCN Navigation Menu */}
-          <NavigationMenu className=''>
+          <NavigationMenu className='my-auto'>
               {/* Company Logo */}
-              <Link href='/'> <img src="/assets/aaslogo.png" className="h-[50px] mx-10" alt=""  /></Link>
-            <NavigationMenuList className="relative flex jsutify-center items-center">
+              <Link href='/'> <img src="/assets/aaslogo.png" className="h-[70px] mx-10" alt=""  /></Link>
+            <NavigationMenuList className="relative flex jsutify-center items-center ">
             
               {/* Static More section 1 */}
               <NavigationMenuItem className="group hidden lg:block">
-                <NavigationMenuTrigger className="">Insights</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-xl">Insights</NavigationMenuTrigger>
                 <NavigationMenuContent className=" transition-all duration-300 group-hover:w-[100vw] ">
-                  {/* <ul className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]">
-                    
-                    {components.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.href}
-                      >
-                        {component.description}
-                      </ListItem>
-                    ))}
-                  </ul> */}
+                
                   <ul className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]  mt-10">
                       <ListItem className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]">
                         <Insights/>
@@ -82,58 +74,34 @@ export function NavbarDemo() {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              {/* Static Getting Started Section 2 */}
+               {/* services */}
               <NavigationMenuItem className="group hidden lg:block">
-                <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-                <NavigationMenuContent className="transition-all duration-300 group-hover:w-[100vw]">
-                <ul className="grid gap-3 p-4 lg:grid-cols-[.75fr_1fr] w-[100vw]">
-                    {[
-                      { label: 'Services', route: 'services' },
-                      { label: 'Login', route: 'auth' },
-                      { label: 'Contact Us', route: 'contact' }
-                    ].map((component, index) => (
-                      <li key={index}>
-                        <Link
-                          href={`/${component.route}`} // Use the route value for the URL
-                          className="text-blue-600 hover:text-blue-800 cursor-pointer"
-                        >
-                          {component.label} {/* Use the label value for display text */}
-                        </Link>
-                      </li>
-                    ))}
+                <NavigationMenuTrigger className="text-xl">Services</NavigationMenuTrigger>
+                <NavigationMenuContent className=" transition-all duration-300 group-hover:w-[100vw] ">
+                
+                  <ul className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]  mt-10">
+                      <ListItem className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]">
+                        <Services/>
+                        
+                      </ListItem>
                   </ul>
-
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              
-              {/* Static Getting Started Section 3 */}
+              {/* more */}
               <NavigationMenuItem className="group hidden lg:block">
-                <NavigationMenuTrigger>More</NavigationMenuTrigger>
-                <NavigationMenuContent className="transition-all duration-300 group-hover:w-[100vw]">
-                <ul className="grid gap-3 p-4 lg:grid-cols-[.75fr_1fr] w-[100vw]">
-                    {[
-                      { label: 'About us', route: '/about-us' },
-                      { label: 'Contact Us', route: '/contact' },
-                      { label: 'Career', route: '/career' },
-                      { label: 'Team', route: '/team' },
-                      
-                      {/* { label: 'Login', route: 'auth' }, */}
-                    ].map((component, index) => (
-                      <li key={index}>
-                        <Link
-                          href={`${component.route}`} // Use the route value for the URL
-                          className="text-blue-600 hover:text-blue-800 cursor-pointer"
-                        >
-                          {component.label} {/* Use the label value for display text */}
-                        </Link>
-                      </li>
-                    ))}
+                <NavigationMenuTrigger className="text-xl">More</NavigationMenuTrigger>
+                <NavigationMenuContent className=" transition-all duration-300 group-hover:w-[100vw] ">
+                
+                  <ul className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]  mt-10">
+                      <ListItem className="grid  p-4  lg:grid-cols-[.75fr_1fr] w-[100vw]">
+                        <More/>
+                        
+                      </ListItem>
                   </ul>
-
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
-          
+
             </NavigationMenuList>
 
           </NavigationMenu>
@@ -141,8 +109,9 @@ export function NavbarDemo() {
 
            <div className="flex justify-center items-center space-x-4 mx-10">
          
-              <Link href={`/contact`}  className="text-blue-600 hover:text-blue-800 cursor-pointer">
-                    <Button  variant= "contactUsBtn" className='rounded-md '>Connect with Us</Button>                      
+              <Link href={`/contact`}  className=" cursor-pointer">
+              <button className='rounded-full text-xl bg-black text-white hover:text-black hover:bg-[#AF9A57] py-3 px-7 transition-colors duration-300'>Get in Touch</button>
+           
               </Link>
      
              <Sheet className="" >

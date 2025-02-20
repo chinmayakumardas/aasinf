@@ -77,7 +77,7 @@ export const projects = [
   {
     title: "AR/VR",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
     link: "https://stripe.com",
   },
   {
@@ -89,13 +89,13 @@ export const projects = [
   {
     title: "Whatsapp Bot",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
     link: "https://google.com",
   },
   {
     title: "Headless CMS",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
     link: "https://meta.com",
   },
   {
@@ -133,44 +133,46 @@ export default function ServiceSection() {
       ease: [0.4, 0.0, 0.2, 1],
     }}
   >
-    <div className="max-w-7xl h-full mx-auto p-2  flex flex-col items-center gap-0 ">
-      {/* Section Title */}
-      <motion.h1
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
-        className="scroll-m-20 text-4xl font-extrabold  tracking-tight lg:text-4xl z-10"
-      >
-        Our Services
-      </motion.h1>
-
-      {/* Hover Effect for Projects */}
-      <div className="flex flex-col z-10">
-        <HoverEffect items={projects} />
-
-        {/* Related Services Button */}
-        <span className="flex justify-center w-full">
-          {/* <Button
-            variant="more"
-            className="rounded-3xl"
-            onClick={() => router.push('/services')}
+    <div className="flex flex-col z-10 min-h-[100vh] py-8 justify-around ">
+        <div className="container flex flex-col gap-20  text-left ">
+          {/* Section Title */}
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: [20, -5, 0],
+            }}
+            transition={{
+              duration: 0.5,
+              ease: [0.4, 0.0, 0.2, 1],
+            }}
+            className="scroll-m-20  font-extrabold   tracking-tight text-4xl lg:text-5xl z-10 "
           >
-            Related Services
-          </Button> */}
-          <button onClick={() => router.push('/services')} className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
-          Related Services
-      </button>
-        </span>
-      </div>
+            Our Experties
+          </motion.h1>
+
+          {/* Hover Effect for Projects */}
+          <div className="flex flex-col z-10">
+            <HoverEffect items={projects} />
+
+            {/* Related Services Button */}
+            <span className="flex justify-center w-full">
+              {/* <Button
+                variant="more"
+                className="rounded-3xl"
+                onClick={() => router.push('/services')}
+              >
+                Related Services
+              </Button> */}
+              <button onClick={() => router.push('/services')} className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+              Related Services
+          </button>
+            </span>
+          </div>
+        </div>
     </div>
   </motion.div>
 </HeroHighlight>

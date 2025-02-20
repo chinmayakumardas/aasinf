@@ -12,7 +12,7 @@ export const useLocomotiveScroll = (options = {}) => {
     const locomotive = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      lerp: 0.1, // Smoothness factor (0–1)
+      lerp: 0.08, // Smoothness factor (0–1)
       multiplier: 1, // Speed multiplier
       direction: "vertical", // Change to 'horizontal' if needed
       reloadOnContextChange: true,

@@ -162,8 +162,8 @@ export default function JobListPage() {
 
   return (
     <div className="w-full mx-auto p-6 space-y-4">
-      <div className="flex  space-x-2">
-        <Input
+      <div className="flex  justify-center items-center space-x-2">
+        <Input className='w-[50vw]'
           placeholder="Search jobs..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}

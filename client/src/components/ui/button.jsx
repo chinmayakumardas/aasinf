@@ -11,8 +11,8 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-primary  text-primary-foreground shadow hover:bg-primary/90",
-        contactUsBtn:
-          "bg-primary  text-primary-foreground shadow hover:bg-primary/90",
+    contactUsBtn:
+          "bg-primary text-primary-foreground shadow hover:bg-primary/90 ",
         moreBtn:
           "bg-primary  text-primary-foreground shadow hover:bg-primary/90",
         animatedBtn:

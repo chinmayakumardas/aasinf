@@ -1,22 +1,22 @@
 import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/navigation';
-const InsightsNavigation = () => {
+const More = () => {
   const navigationItems = [
-      { name: 'Recent Case Study', path: '/insights/case-studies' },
-      { name: 'Mission & Visions', path: '/mission' },
-      { name: 'Events', path: '/events' },
-      { name: 'Recent Blogs', path: '/blog' },
+      { name: 'About us', path: '/about-us' },
+      { name: 'Career', path: '/career' },
+      { name: 'Contact us', path: '/contact' },
+      
   ];
- const router = useRouter();
+  const router = useRouter();
 
   const handleClick = () => {
-    router.push('/insights/case-studies');
+    router.push('/about-us');
   };
   return (
     <div className=" p-4 w-[100vw] flex justify-around">
       <div className="col-span-1 flex flex-col gap-4 w-[40%]">
-        <h2 className="text-3xl font-bold mb-4">Insights</h2>
+        <h2 className="text-3xl font-bold mb-4">Explore More</h2>
         <p className="text-gray-700 mb-6">
           Asking the better questions that unlock <br /> new answers to the working
           world's most complex issues.
@@ -26,7 +26,7 @@ const InsightsNavigation = () => {
       className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" 
       onClick={handleClick}
     >
-      Explore
+      Who We Are
     </button>
         </span>
       </div>
@@ -48,4 +48,4 @@ const InsightsNavigation = () => {
   );
 };
 
-export default InsightsNavigation;
+export default More;

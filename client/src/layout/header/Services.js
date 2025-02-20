@@ -1,32 +1,31 @@
 import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/navigation';
-const InsightsNavigation = () => {
+const Services = () => {
   const navigationItems = [
-      { name: 'Recent Case Study', path: '/insights/case-studies' },
-      { name: 'Mission & Visions', path: '/mission' },
-      { name: 'Events', path: '/events' },
-      { name: 'Recent Blogs', path: '/blog' },
+      { name: 'AR/VR', path: '/ar-vr' },
+      { name: 'ERP Development', path: '/erp-development' },
+      { name: 'UI/UX', path: '/ui-ux' },
+      { name: 'Mobile Apps', path: '/mobile-apps' },
   ];
- const router = useRouter();
+  const router = useRouter();
 
   const handleClick = () => {
-    router.push('/insights/case-studies');
+    router.push('/services');
   };
   return (
     <div className=" p-4 w-[100vw] flex justify-around">
       <div className="col-span-1 flex flex-col gap-4 w-[40%]">
-        <h2 className="text-3xl font-bold mb-4">Insights</h2>
+        <h2 className="text-3xl font-bold mb-4">Services</h2>
         <p className="text-gray-700 mb-6">
-          Asking the better questions that unlock <br /> new answers to the working
-          world's most complex issues.
+      Providing services that unlock <br /> new solutions to the working world's most complex issues.
         </p>
         <span>
         <button 
       className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" 
       onClick={handleClick}
     >
-      Explore
+      All Services
     </button>
         </span>
       </div>
@@ -48,4 +47,4 @@ const InsightsNavigation = () => {
   );
 };
 
-export default InsightsNavigation;
+export default Services;

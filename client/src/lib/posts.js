@@ -20,7 +20,7 @@ export const posts = [
     imageUrl: 'https://media.istockphoto.com/id/891297988/photo/seo-search-engine-optimization.jpg?b=1&s=612x612&w=0&k=20&c=YC_us3mf2Mx_ceMQXXut52My6f6JSkM6lmIzYxi_UWQ=',
   },
   {
-    id: 1,
+    id: 3,
     slug: 'how-to-start-a-blog',
     title: 'How to Start a Blog: A Complete Guide',
     excerpt: 'Starting a blog is easier than you think. Here’s a step-by-step guide to help you get started...',
@@ -30,7 +30,7 @@ export const posts = [
     imageUrl: 'https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    id: 2,
+    id: 4,
     slug: 'importance-of-seo',
     title: 'Why SEO is Crucial for Your Blog’s Success',
     excerpt: 'SEO (Search Engine Optimization) is an essential element of any successful blog...',
@@ -40,7 +40,7 @@ export const posts = [
     imageUrl: 'https://media.istockphoto.com/id/891297988/photo/seo-search-engine-optimization.jpg?b=1&s=612x612&w=0&k=20&c=YC_us3mf2Mx_ceMQXXut52My6f6JSkM6lmIzYxi_UWQ=',
   },
   {
-    id: 1,
+    id: 5,
     slug: 'how-to-start-a-blog',
     title: 'How to Start a Blog: A Complete Guide',
     excerpt: 'Starting a blog is easier than you think. Here’s a step-by-step guide to help you get started...',
@@ -50,7 +50,7 @@ export const posts = [
     imageUrl: 'https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    id: 2,
+    id: 6,
     slug: 'importance-of-seo',
     title: 'Why SEO is Crucial for Your Blog’s Success',
     excerpt: 'SEO (Search Engine Optimization) is an essential element of any successful blog...',
@@ -60,7 +60,7 @@ export const posts = [
     imageUrl: 'https://media.istockphoto.com/id/891297988/photo/seo-search-engine-optimization.jpg?b=1&s=612x612&w=0&k=20&c=YC_us3mf2Mx_ceMQXXut52My6f6JSkM6lmIzYxi_UWQ=',
   },
   {
-    id: 1,
+    id: 7,
     slug: 'how-to-start-a-blog',
     title: 'How to Start a Blog: A Complete Guide',
     excerpt: 'Starting a blog is easier than you think. Here’s a step-by-step guide to help you get started...',
@@ -70,7 +70,7 @@ export const posts = [
     imageUrl: 'https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    id: 2,
+    id: 8,
     slug: 'importance-of-seo',
     title: 'Why SEO is Crucial for Your Blog’s Success',
     excerpt: 'SEO (Search Engine Optimization) is an essential element of any successful blog...',

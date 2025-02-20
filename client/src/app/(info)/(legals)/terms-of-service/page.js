@@ -1,10 +1,10 @@
 import PublicLayout from "@/layout/PublicLayout";
 
-export default function HomeLayout({ children }) {
+export default function Terms() {
   return (
     <PublicLayout>
       
-        {children}
+      Terms
       
     </PublicLayout>
   );
