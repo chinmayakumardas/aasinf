@@ -1,5 +1,6 @@
 'use client'
-import "./globals.css";import { ToastContainer } from 'react-toastify';
+import "./globals.css";
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import the CSS for toasts globally
 import { Provider } from "react-redux";
 import store from "@/redux/store";

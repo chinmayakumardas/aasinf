@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
 @import "locomotive-scroll/dist/locomotive-scroll.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +19,7 @@
 /* Apply Helvetica globally */
 body {
   font-family: 'Helvetica', Arial, sans-serif;
+  font-family: 'jost';
 }
 
 
@@ -142,4 +145,8 @@ html.has-scroll-smooth {
 
 [data-scroll] {
   will-change: transform;
+}
+
+.main_header button{
+  margin-top: 0 !important;
 }

@@ -112,7 +112,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea"; // Shadcn UI Textarea
 import { useDispatch } from 'react-redux';
 import { applyForJob } from '@/redux/slices/careerSlice';
-import { useToast } from "@/hooks/use-toast";
+//import { useToast } from "@/hooks/toast-container";
 
 export default function ApplicationForm() {
   const [formData, setFormData] = useState({
@@ -132,7 +132,7 @@ export default function ApplicationForm() {
   const [resume, setResume] = useState(null); 
   const dispatch = useDispatch();
   const router = useRouter();
-  const { toast } = useToast();
+  //const { toast } = useToast();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -162,16 +162,16 @@ export default function ApplicationForm() {
       // Dispatch the applyForJob action
       await dispatch(applyForJob(formDataToSubmit));
       console.log("Applicat data",formData)
-      toast({
-        description: "Job Applied Successfully!",
-      });
+      // toast({
+      //   description: "Job Applied Successfully!",
+      // });
       
       router.push('/career'); // Redirect after successful submission
     } catch (error) {
       console.error(error);
-      toast({
-        description: "Error while applying!",
-      });
+      // toast({
+      //   description: "Error while applying!",
+      // });
     }
   };
 

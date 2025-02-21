@@ -4,7 +4,7 @@ export default function cookies() {
   return (
     <PublicLayout>
       
-    cookies
+    <p>cookies</p>
       
     </PublicLayout>
   );

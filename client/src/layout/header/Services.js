@@ -3,10 +3,10 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 const Services = () => {
   const navigationItems = [
-      { name: 'AR/VR', path: '/ar-vr' },
-      { name: 'ERP Development', path: '/erp-development' },
-      { name: 'UI/UX', path: '/ui-ux' },
-      { name: 'Mobile Apps', path: '/mobile-apps' },
+      { name: 'AR/VR', path: '/services/ar-vr' },
+      { name: 'Data Analysis', path: '/services/data-analytics' },
+      { name: 'UI/UX', path: '/services/ui-ux' },
+      { name: 'Web Development', path: '/services/web-development' },
   ];
   const router = useRouter();
 
@@ -22,7 +22,7 @@ const Services = () => {
         </p>
         <span>
         <button 
-      className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" 
+      className="bg-[#AF9A57] text-white py-2 px-4 rounded-lg  mt-0" 
       onClick={handleClick}
     >
       All Services

@@ -1,5 +1,5 @@
 
-import AdminPannelLayout from '@/components/layout/AdminPannelLayout';
+import AdminPannelLayout from '@/layout/AdminPannelLayout';
 
 
 export default function AutherLayout({ children }) {

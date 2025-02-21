@@ -38,7 +38,7 @@ const blogs = [
 const FeaturedBlogs = () => {
   const router=useRouter()
   return (
-<div className=' z-10 min-h-[100vh] py-8 flex items-center justify-center'>
+<div className=' z-10 min-h-[100vh] py-8 flex items-center justify-center bg-gray-50 '>
         
       <div className="container flex flex-col justify-between gap-20 text-left mx-auto px-4 ">
           {/* Heading Section */}

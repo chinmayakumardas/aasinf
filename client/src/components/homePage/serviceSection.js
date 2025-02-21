@@ -71,45 +71,72 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { HeroHighlight } from "../ui/hero-highlight";
-import { ButtonsCard } from "../ui/tailwindcss-buttons";
+
+
 // Project data
 export const projects = [
-  {
-    title: "AR/VR",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://stripe.com",
-  },
-  {
-    title: "ERP System",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
-  },
-  {
-    title: "Whatsapp Bot",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://google.com",
-  },
-  {
-    title: "Headless CMS",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Website Development",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
-  },
-  {
-    title: "CRM",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
-  },
+    {
+      title: "AR/VR",
+      icon: "🕶️", // AR/VR Icon
+      category: "Technology",
+      status: "Active",
+      createdAt: "2024-01-01",
+      description:
+        "Immersive AR/VR experiences for education, entertainment, and training simulations.",
+      link: "/services/ar-vr",
+    },
+    {
+      title: "ERP System",
+      icon: "📊", // ERP Icon
+      category: "Business Software",
+      status: "Active",
+      createdAt: "2024-02-10",
+      description:
+        "Comprehensive enterprise resource planning to streamline operations and management.",
+      link: "/services/data-analytics",
+    },
+    {
+      title: "WhatsApp Bot",
+      icon: "🤖", // WhatsApp Bot Icon
+      category: "Automation",
+      status: "Beta",
+      createdAt: "2024-01-15",
+      description:
+        "Automated WhatsApp communication for customer support, notifications, and marketing.",
+      link: "/services/cloud-services",
+    },
+    {
+      title: "Headless CMS",
+      icon: "📚", // CMS Icon
+      category: "Content Management",
+      status: "Active",
+      createdAt: "2024-01-20",
+      description:
+        "Flexible content management system for modern websites and applications.",
+      link: "/services/ui-ux",
+    },
+    {
+      title: "Website Development",
+      icon: "🌐", // Website Icon
+      category: "Web Development",
+      status: "In Progress",
+      createdAt: "2024-02-05",
+      description:
+        "Custom website development with modern UI/UX and seamless performance.",
+      link: "/services/web-development",
+    },
+    {
+      title: "CRM",
+      icon: "💼", // CRM Icon
+      category: "Business Software",
+      status: "Active",
+      createdAt: "2024-01-28",
+      description:
+        "Customer Relationship Management system for sales, marketing, and support.",
+      link: "/services/mobile-development",
+    },
+  
+  
 ];
 
 export default function ServiceSection() {
@@ -117,7 +144,7 @@ export default function ServiceSection() {
 
   return (
 
-    <HeroHighlight className='h-full py-2'>
+    <HeroHighlight className='h-full py-1'>
   <motion.div
     className=" inset-0 z-0  to-red-500 opacity-30"
     initial={{
@@ -134,7 +161,7 @@ export default function ServiceSection() {
     }}
   >
     <div className="flex flex-col z-10 min-h-[100vh] py-8 justify-around ">
-        <div className="container flex flex-col gap-20  text-left ">
+        <div className="container flex flex-col gap-10  text-left ">
           {/* Section Title */}
           <motion.h1
             initial={{

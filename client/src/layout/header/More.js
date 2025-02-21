@@ -23,7 +23,7 @@ const More = () => {
         </p>
         <span>
         <button 
-      className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" 
+      className="bg-[#AF9A57] text-white py-2 px-4 rounded-lg  mt-0" 
       onClick={handleClick}
     >
       Who We Are
