@@ -14,9 +14,9 @@ export default function PublicLayout({ children }) {
 
   return (
     <Provider store={store} >
+        <NavbarDemo />
         <div ref={scrollRef} data-scroll data-scroll-speed="2" data-scroll-container >
       <div className="flex flex-col min-h-screen justify-between">
-        <NavbarDemo />
 
         <main className="pt-[100px]" >{children}</main>
         <Footer />

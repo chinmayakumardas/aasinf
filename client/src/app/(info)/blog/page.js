@@ -83,8 +83,8 @@ const BlogPage = () => {
  
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredPosts.map((post) => (
-            <Link href={`/blog/${post.slug}`} key={post.id}>
+          {filteredPosts.map((post,index) => (
+            <Link href={`/blog/${post.slug}`} key={`${post.id ?? 'no-id'}-${index}`}>
               <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                 <div className="aspect-w-16 aspect-h-9">
                   <img

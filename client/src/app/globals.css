@@ -1,24 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
 @import "locomotive-scroll/dist/locomotive-scroll.css";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-/* globals.css */
-@font-face {
-  font-family: 'Helvetica';
-  src: url('/helvetica/helvetica.woff2') format('woff2'),
-       url('/helvetica/helvetica.woff') format('woff'),
-       url('/helvetica/helvetica.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 /* Apply Helvetica globally */
 body {
-  font-family: 'Helvetica', Arial, sans-serif;
+  
   font-family: 'jost';
 }
 
