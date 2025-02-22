@@ -104,7 +104,7 @@ export function NavbarDemo() {
            <div className="flex justify-center items-center space-x-4 mx-3 sm:mx-10">
          
               <Link href={`/contact`}  className=" cursor-pointer">
-              <button className='rounded-[10px]  text-xl bg-black text-white hover:text-black hover:bg-[#AF9A57] py-3 px-7 transition-colors duration-300'>Get in Touch</button>
+              <button className='rounded-[10px] text-md md:text-xl bg-black text-white hover:text-black hover:bg-[#AF9A57] py-2 md:py-3 px-4 md:px-7 transition-colors duration-300'>Get in Touch</button>
            
               </Link>
      

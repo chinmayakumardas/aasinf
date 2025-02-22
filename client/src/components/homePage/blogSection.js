@@ -45,8 +45,8 @@ const FeaturedBlogs = () => {
           <h2 className="text-4xl lg:text-5xl font-semibold text-gray-800">Tip's,Trick's & Report's</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4   mx-auto flex flex-col items-center">
-              {blogs.map((blog) => (
-                <Card key={blog.id} className="hover:shadow-0 transition border-none w-full h-full">
+              {blogs.map((blog,index) => (
+                <Card href={`/blog/${blog.slug}`} key={`${blog.id ?? 'no-id'}-${index}`} className="hover:shadow-0 transition border-none w-full h-full">
                   <CardContent className="p-0 relative ">
                     <div className="w-full h-60 lg:h-50 overflow-hidden rounded-xl cursor-pointer">
                       <img

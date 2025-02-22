@@ -73,7 +73,7 @@ export default function HeroSection() {
   }
 
   return (
-    <div className="relative h-[60vh] md:h-[90vh] overflow-hidden">
+    <div className="relative h-[60vh] md:h-[90vh] overflow-hidden ">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentIndex}
@@ -89,7 +89,7 @@ export default function HeroSection() {
           className="absolute w-full h-full"
         >
           {/* Slide Container */}
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full ">
             {/* Image and Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30">
               <img
@@ -100,7 +100,7 @@ export default function HeroSection() {
             </div>
 
             {/* Content */}
-            <div className="relative h-full flex items-center">
+            <div className="relative h-full flex items-center ">
               <div className="container mx-auto px-4 md:px-8">
                 <div className="max-w-3xl">
                   {/* Category */}
@@ -148,7 +148,7 @@ export default function HeroSection() {
             </div>
 
             {/* Navigation Dots */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 ">
               {slides.map((_, index) => (
                 <button
                   key={index}
@@ -165,7 +165,7 @@ export default function HeroSection() {
       {/* Navigation Arrows */}
       <button
         onClick={handlePrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 group"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10  group hidden sm:block "
       >
         <div className="bg-white/10 hover:bg-[#AF9A57] p-3 rounded-full backdrop-blur-sm
                       transition-all duration-300 group-hover:scale-110">
@@ -175,7 +175,7 @@ export default function HeroSection() {
 
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 group"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 group hidden sm:block"
       >
         <div className="bg-white/10 hover:bg-[#AF9A57] p-3 rounded-full backdrop-blur-sm
                       transition-all duration-300 group-hover:scale-110">

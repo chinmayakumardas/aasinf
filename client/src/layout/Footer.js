@@ -11,7 +11,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
  
   return (
-    <footer className="border-0 py-8 min-h-[50vh] flex flex-col justify-center">
+    <footer className="border-0 py-8  flex flex-col justify-center">
       <div className="container mx-auto px-4 flex flex-col justify-around">
         {/* Row 1: Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left ">
@@ -161,11 +161,11 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 py-4 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
           <div>Copyright {currentYear} AAS Information Technology Pvt. Ltd.</div>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" onClick={() => router.push('/admin')} className="hover:underline">Privacy Policy</Link>
+            <Link href="/privacy-policy"  className="hover:underline">Privacy Policy</Link>
             <span className="text-gray-400">|</span>
-            <Link href="/cookies-policy" onClick={() => router.push('/admin')} className="hover:underline">Cookies</Link>
+            <Link href="/cookies-policy"  className="hover:underline">Cookies</Link>
             <span className="text-gray-400">|</span>
-            <Link href="/terms-of-service" onClick={() => router.push('/admin')} className="hover:underline">Terms of Service</Link>
+            <Link href="/terms-of-services"  className="hover:underline">Terms of Service</Link>
           </div>
         </div>
       </div>

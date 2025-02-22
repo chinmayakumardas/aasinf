@@ -1,4 +1,3 @@
-
 'use client';
 import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
@@ -49,7 +48,7 @@ export default function JobListPage() {
  
   // Handle Apply Job action
   const handleApply = (jobId) => {
-  dispatch(applyForJob({ jobId, userData }));
+    dispatch(applyForJob({ jobId, userData }));
     router.push(`/career/apply/${jobId}`)
   };
  
@@ -105,11 +104,8 @@ export default function JobListPage() {
       </div>
  
       {/* Loading Spinner */}
-      {loading && <div>Loading jobs...</div>}
- 
-      {/* Displaying Error */}
-      {error && <div className="text-red-500">{error}</div>}
- 
+      {/* {loading && <div>Loading jobs...</div>} */}
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -166,7 +162,7 @@ export default function JobListPage() {
             </motion.div>
           ))
         ) : (
-          <p className="text-gray-500 text-center">No jobs found.</p>
+          <p className="text-[#AF9A57] text-center">Currently we don't have any openings.</p>
         )}
       </motion.div>
  
